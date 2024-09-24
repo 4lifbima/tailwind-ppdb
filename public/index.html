@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/output.css" rel="stylesheet">
+</head>
+<style>
+  /* Custom CSS for smoother transitions and hiding/showing the mobile menu */
+  .nav-hidden {
+    display: none;
+  }
+  .nav-visible {
+    display: block;
+  }
+</style>
+<body class="bg-gradient-to-b from-blue-500 to-purple-500 text-white">
+
+  <!-- Navbar -->
+  <header class="bg-white bg-opacity-30 py-4 rounded-full mt-5 mr-10 ml-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <img src="img/favicon.png" alt="Icon Sekolah" class="w-10 h-10">
+        <div>
+          <h1 class="text-lg font-bold">SMKN 1 KOTA GORONTALO</h1>
+          <p class="text-sm">PROVINSI GORONTALO</p>
+        </div>
+      </div>
+
+      <!-- Tombol menu mobile (Hamburger ikon) -->
+      <button id="nav-toggle" class="block lg:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" viewBox="0 0 24 24" stroke="currentColor" fill="none">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+
+      <!-- Nav Menu -->
+      <nav id="nav-menu" class="hidden lg:flex">
+        <ul class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6">
+          <li><a href="#" class="hover:text-gray-300">Beranda</a></li>
+          <li><a href="#tentang" class="hover:text-gray-300">Tentang</a></li>
+          <li><a href="#informasi" class="hover:text-gray-300">Informasi</a></li>
+          <li><a href="#login" class="hover:bg-gray-700 bg-blue-600 px-4 py-2 rounded">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu Content -->
+    <nav id="mobile-menu" class="nav-hidden lg:hidden mt-4">
+      <ul class="flex flex-col items-center space-y-4">
+        <li><a href="#" class="block py-2 px-4 text-white hover:bg-blue-600">Beranda</a></li>
+        <li><a href="#tentang" class="block py-2 px-4 text-white hover:bg-blue-600">Tentang</a></li>
+        <li><a href="#informasi" class="block py-2 px-4 text-white hover:bg-blue-600">Informasi</a></li>
+        <li><a href="#login" class="block py-2 px-4 text-white bg-purple-600 rounded">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- Hero Section -->
+    <section class="pt-16 pb-10 bg-blue-600 rounded-lg">
+      <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
+        <!-- Teks di bagian kiri -->
+        <div class="text-left lg:w-1/2">
+          <h2 class="text-6xl font-bold">E-Voting <br> SMKN 1 GORONTALO</h2>
+          <p class="mt-4">Ayo voting pilihan kamu sekarang!!!!!</p>
+          <a href="#login" class="mt-6 inline-block bg-blue-900 px-6 py-3 rounded font-semibold text-white">Login</a>
+        </div>
+        <!-- Gambar di bagian kanan -->
+        <div class="mt-8 lg:mt-0 lg:w-1/2">
+          <img src="img/PPDB.png" alt="E-Voting" class="w-70 h-auto">
+        </div>
+      </div>
+    </section>
+  
+
+  <!-- Tentang Kami -->
+  <section id="tentang" class="py-16 bg-gradient-to-r from-black to-purple-600">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center">
+      <img src="img/PPDB2.png" alt="Tentang Kami" class="w-45 h-auto mb-6 md:mb-0 md:mr-10">
+      <div class="text-white max-w-xl">
+        <h3 class="text-3xl font-bold">Tentang Kami</h3>
+        <p class="mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel congue quam, quis laoreet metus.
+          Maecenas sem tellus, auctor id interdum faucibus, malesuada et nisi. Nullam id mattis leo.
+          In ornare consectetur lorem at dignissim. Donec orci erat, ultricies sit amet tellus nec, pretium pulvinar quam.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Informasi Sekolah -->
+  <section id="informasi" class="py-16 bg-gradient-to-b from-blue-700 to-purple-700">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10">Informasi Sekolah</h3>
+      <div class="flex flex-wrap justify-center gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white text-black rounded-lg shadow-lg p-6 w-72">
+          <h4 class="font-bold text-lg">Pendaftaran OSIS</h4>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel congue quam, quis laoreet metus.
+          </p>
+          <p class="mt-4 text-blue-500">26 Oktober 2023</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white text-black rounded-lg shadow-lg p-6 w-72">
+          <h4 class="font-bold text-lg">Pemilihan Ketua OSIS</h4>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel congue quam, quis laoreet metus.
+          </p>
+          <p class="mt-4 text-blue-500">27 Oktober 2023</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white text-black rounded-lg shadow-lg p-6 w-72">
+          <h4 class="font-bold text-lg">Pelantikan Ketua OSIS</h4>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel congue quam, quis laoreet metus.
+          </p>
+          <p class="mt-4 text-blue-500">28 Oktober 2023</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white text-black rounded-lg shadow-lg p-6 w-72">
+          <h4 class="font-bold text-lg">Pengumuman Ketua Terpilih</h4>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel congue quam, quis laoreet metus.
+          </p>
+          <p class="mt-4 text-blue-500">29 Oktober 2023</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section / Footer -->
+  <footer class="py-12 bg-gradient-to-r from-blue-600 to-purple-600">
+    <div class="container mx-auto text-center">
+      <p class="text-white">&copy; 2024 SMKN 1 Gorontalo - E-Voting. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript to toggle mobile menu -->
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('nav-hidden');
+      mobileMenu.classList.toggle('nav-visible');
+    });
+  </script>
+
+</body>
+</body>
+</html>
